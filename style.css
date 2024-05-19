@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/* Fontes */
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    background-color: #f4f0e6;
+    color: #3c2f2f;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3c2f2f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 4px solid #d2b48c;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+
+/* Principal */
+main {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid #d2b48c;
+    padding-bottom: 0.5rem;
+    color: #3c2f2f;
+}
+
+/* Parágrafos, listas e formulários */
+p, ul, form {
+    font-family: 'Merriweather', serif;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: #3c2f2f;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Botões */
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #3c2f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
+}
+
+button:hover {
+    background-color: #2a1e1e;
+}
+
+/* Serviços */
+.service {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-top: 2px solid #d2b48c; /* Adiciona borda entre os serviços */
+}
+
+.service:last-child {
+    border-bottom: none; /* Remove a borda do último serviço */
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    filter: sepia(40%) saturate(150%) contrast(100%) brightness(90%);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(60, 47, 47, 0.8), rgba(60, 47, 47, 0));
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Contato */
+#contact p {
+    text-align: center;
+}
+
+.whatsapp-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe58;
+}
+
+/* Preço em destaque */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.preco {
+    text-decoration: underline;
+}
+/* Rodapé */
+footer {
+    background-color: #3c2f2f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: .7em;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    border-top: 2px solid #d2b48c;
+}
+footer > p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .service {
+        padding-bottom: 1rem;
+    }
+
+    .service img {
+        border-radius: 3px;
+    }
+
+    .overlay {
+        padding: 0.5rem;
+    }
+
+    .overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .whatsapp-button {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 2px;
+        font-size: .7em;
+    }
+}
