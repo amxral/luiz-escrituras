@@ -162,7 +162,7 @@ footer {
     padding: 5px;
     font-size: .7em;
     bottom: 0;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Playfair Display', serif;
     border-top: 2px solid #d2b48c;
 }
