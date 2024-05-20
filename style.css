@@ -34,6 +34,16 @@ main {
 }
 
 /* Seções */
+#about-hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#about, #hours {
+    width: 48%;
+}
+
 section {
     margin-bottom: 2rem;
 }
@@ -160,7 +170,15 @@ footer > p {
     margin: 0;
 }
 
+
 /* Responsividade */
+
+@media (max-width: 697px) {
+    #about, #hours {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     header {
         padding: 1rem;
