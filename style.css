@@ -21,9 +21,10 @@ header {
 }
 /* Navegação */
 nav {
-    background-color: #5c4848;
-    border-bottom: 2px solid #d2b48c;
+    background-color: #3c2f2f;
+    border-bottom: 4px solid #d2b48c;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -33,6 +34,8 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
 }
 
 nav li {
@@ -41,11 +44,11 @@ nav li {
 
 .nav-link {
     display: block;
-    padding: 10px 5px;
+    padding: .8em 1em;
     text-decoration: none;
     color: white;
     font-family: 'Merriweather', serif;
-    font-size: 1rem;
+    font-size: .9em;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -53,6 +56,18 @@ nav li {
 .nav-link:focus {
     background-color: #d2b48c;
     color: #3c2f2f;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 5px;
+    cursor: pointer;
 }
 
 h1 {
@@ -212,12 +227,19 @@ footer > p {
     #about, #hours {
         width: 100%;
     }
-    nav ul {
-        flex-direction: column;
+    .hamburger {
+        display: block;
     }
 
-    nav li {
-        margin: 0.5rem 0;
+    nav ul {
+        flex-direction: column;
+        max-height: 0;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+        max-height: 300px; /* Ajuste conforme necessário */
     }
 
     .nav-link {
