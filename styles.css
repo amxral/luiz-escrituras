@@ -15,13 +15,12 @@ body {
 header {
     background-color: #3c2f2f;
     color: white;
-    padding: 1rem;
+    padding: 1em 1em .3em;
     text-align: center;
-    border-bottom: 2px solid #d2b48c;
 }
 /* Navegação */
 nav {
-    background-color: #453636;
+    background-color: #3c2f2f;
     border-bottom: 3px solid #d2b48c;
     text-align: center;
     position: relative;
@@ -44,7 +43,7 @@ nav li {
 
 .nav-link {
     display: block;
-    padding: .3em 1em;
+    padding: .4em 1em;
     text-decoration: none;
     color: white;
     font-family: 'Merriweather', serif;
@@ -230,6 +229,7 @@ footer > p {
         align-items: center;
         justify-content: space-between; /* Se você quiser que eles fiquem nas extremidades opostas do header */
         padding: 20px; /* Ajuste conforme necessário */
+        border-bottom: 1px solid #d2b48c;
     }
     
     header h1 {
